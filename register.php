@@ -1,4 +1,13 @@
 <html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Register/Login - PluralPal</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
 <body>
 <?php
 include 'db.php';
@@ -127,8 +136,8 @@ switch ($method) {
 }
 ?>
 
-<h1>Register</h1>
-<form method="POST" accept-charset="UTF-8">
+<form method="POST" accept-charset="UTF-8" id="register_form">
+    <h1>Register</h1>
     <label for="username">Username:</label>
     <input type="text" id="username" name="username"><br>
     <label for="email">E-Mail:</label>
